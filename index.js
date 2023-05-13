@@ -7,8 +7,7 @@ const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 
 app.use(bodyParser.urlencoded({extended: false}));
-
-app.use(cookieParser());
+app.use(cookieParser("secret"));
 
 
 
